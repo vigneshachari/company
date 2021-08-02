@@ -36,9 +36,9 @@ body {
 
 /*============= banner secction =============*/
 #Home {
-  background: url(/img/landing_banner.png) no-repeat center center fixed;
+  background: url(/img/Artificial-Intelligence-Future.jpg) no-repeat center center fixed;
   display: table;
-  height: 600px;
+  height: 700px;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -96,8 +96,8 @@ body {
 	margin-bottom: 20px;
 }
 .titleHR span {
-	border-left: 5px solid #fff;
-	border-right: 5px solid #fff;
+	/* border-left: 5px solid #fff;
+	border-right: 5px solid #fff; */
 	display: inline-block;
 	height: 5px;
 	left: 0;
@@ -110,7 +110,8 @@ body {
 .titlePG {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  line-height: 150%;
+  font-size: 20px;
   margin-top: 60px;
   color:#616971;
   text-align: justify;
@@ -177,8 +178,8 @@ body {
 	margin-bottom: 20px;
 }
 .productHR span {
-	border-left: 5px solid #fff;
-	border-right: 5px solid #fff;
+	/* border-left: 5px solid #fff;
+	border-right: 5px solid #fff; */
 	display: inline-block;
 	height: 5px;
 	left: 0;
@@ -661,8 +662,8 @@ a, a:hover {
 	margin-bottom: 20px;
 }
 .productUL span {
-	border-left: 5px solid #fff;
-	border-right: 5px solid #fff;
+	/* border-left: 5px solid #fff;
+	border-right: 5px solid #fff; */
 	display: inline-block;
 	height: 5px;
 	left: 0;
@@ -697,6 +698,8 @@ a, a:hover {
   border: none;
 }
 .aboutusBrief p{
+  font-size: 20px;
+  line-height: 150%;
   text-align: justify;
 }
 .card-text3{
@@ -785,16 +788,17 @@ a, a:hover {
 }
 
 .careerBanner{
-  background-color: #0864B1;
+  background-color: #fff;
   padding: 0%;
   background-size: cover;
   display: flex;
   width: 100%;
+  margin-top: 30px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 	.accordion {
-    background-color: #8fb7a5;
+    background-color: #7a7a7a;
     color: #FFF;
     cursor: pointer;
     padding: 18px;
@@ -802,6 +806,7 @@ a, a:hover {
     width: 100%;
     text-align: left;
     border: 1px solid white;
+    border-radius: 20px;
     outline: none;
     transition: 0.4s;
     font: 20px Lato, sans-serif;
@@ -809,7 +814,7 @@ a, a:hover {
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active-1, .accordion:hover {
-      background-color: #527e6a;
+      background-color: #00a0e9;
   }
 
   /* Style the accordion panel. Note: hidden by default */
@@ -821,14 +826,16 @@ a, a:hover {
       transition: max-height 0.2s ease-out;
   }
 
-  p{
+  .subject{
     font: 16px Lato, sans-serif; 
+    text-align: justify;
+    line-height: 150%;
   }
 
   .accordion:after {
       content: '\25BC'; /* Unicode character for "plus" sign (+) */
       font-size: 20px;
-      color: #3742d0;
+      color: #fff;
       float: right;
       margin-left: 5px;
   }
@@ -836,6 +843,235 @@ a, a:hover {
   .active-1:after {
       content: "\25B2"; /* Unicode character for "minus" sign (-) */
   }
+
+  .scrollbars {
+    height: 280px;
+width: 100%;
+}
+
+
+
+.scrollbar-path-vertical, .scrollbar-path-horizontal {
+position: absolute;
+background-color: #eee;
+background-color: rgba(220,220,220,0.5); 
+z-index: 100;
+}
+.scrollbar-path-horizontal {
+bottom: 5px;
+left: 0;
+width: 100%;
+height: 10px;
+}
+.scrollbar-path-vertical {
+right: 5px; 
+top: 0; 
+height: 100%; 
+width: 8px; 
+}
+.scrollbar-path-vertical {
+box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+-moz-box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+-webkit-box-shadow: inset 1px 0px 0 rgba(0,0,0,0.1);
+}
+.scrollbar-path-horizontal {
+box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+-moz-box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+-webkit-box-shadow: inset 0px 1px 0 rgba(0,0,0,0.1);
+}
+.scrollbar-handle{
+position: relative;
+top: 0;
+left: 0;
+background-color: #00aeef;
+}
+.scrollbar-path-vertical .scrollbar-handle {
+height: 20%;
+width: 100%;
+}
+.scrollbar-path-horizontal .scrollbar-handle {
+width: 20%;
+height: 100%;
+}
+.scrollbar-path-vertical, .scrollbar-path-horizontal, .scrollbar-handle {
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+.scrollbar-content {
+padding: 0 20px 0 0;
+}
+.scrollbar-path-vertical {
+top: 0 !important;
+}
+
+.teamList ul {
+list-style: none;
+}
+.nav.nav-pills {
+height: 280px;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+.nav-pills > li > a, .nav-pills > li > a:hover {
+border-radius: 0px;
+background: none;
+padding: 0;
+}
+.nav-pills > li{
+margin: 0 0px 15px;
+display: block;
+width: 100%;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+
+background-color: transparent;
+}
+.well {
+min-height: 20px;
+padding: 0px;
+margin-bottom: 0px;
+background-color: transparent;
+border: 0px solid #e3e3e3;
+border-radius: 0px;
+-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.05);
+box-shadow: inset 0 0px 0px rgba(0,0,0,.05);
+}
+
+.teamList li{
+margin-bottom: 15px;
+}
+
+.teamList ul li a {
+width: 100%;
+float: left;
+}
+
+.teamMemberImage {
+border-radius: 50%;
+width: 80px;
+height: 80px;
+background-color: #ffffff;
+box-shadow: 0 1px 10px 0 #e5e5e5;
+overflow: hidden;
+filter: grayscale(100%);
+position: relative;
+}
+.teamMemberImage img {
+position: absolute;
+width: 100%;
+}
+
+.teamMemberName {
+margin-left: 25px;
+line-height: 26px;
+font-size: 14px;
+color: #616971;
+width: 75%;
+}
+
+.teamMemberName b {
+font-size: 18px;
+}
+
+.active .teamMemberName {
+color: #2e89ff;
+}
+
+.active .teamMemberImage {
+filter: grayscale(0%);
+}
+
+.teamMemberName:hover {
+color: #2e89ff;
+}
+
+.teamList ul li:hover .teamMemberImage {
+filter: grayscale(0%);
+}
+
+
+.testimonialsInner {
+background-color: rgba(0, 0, 0, 0.02);
+border-bottom: 4px solid #009ee3;
+}
+ .flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  margin-right: 10px;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+}
+#mentor {
+  margin: 0px 0px 90px 0px;
+}
+.advisor{
+  margin-bottom: 50px;
+}
+#headeBar{
+  margin-bottom: 100px;
+}
+/* lined tabs */
+
+.lined .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link:hover {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link.active {
+  background: none;
+  color: #555;
+  border-color: #2b90d9;
+}
+.tab-head{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  }
+  .nav-item1 a:focus{
+  outline: unset;
+  }
+  .nav-item1 a:hover{
+  border: 1px solid #fff !important;
+  }
+  .nav-item1 a{
+  color: black !important;
+  font-weight: 600;
+  padding-left: 28px;
+  padding-right: 28px;
+  }
+  .nav-item1 .active{
+  color: #5741A3 !important;
+  border:none !important;
+  border-bottom: 3px solid #5741A3 !important;
+  font-weight: 600;
+  }
+  .nav-item1 .active:hover{
+  border:none !important;
+  border-bottom: 3px solid #5741A3 !important;
+  }
+  .nav-tabs{
+  border-bottom: none !important;
+  }
+  .tabForm{
+    margin-bottom: 130px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px gray;
+  }
+  .textarea{
+    text-align: justify;
+  }
+.main{
+  margin-bottom: 10px;
+}
 
 
 /* #media_mentions{
@@ -958,4 +1194,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+}
+.form-control1{
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #707070;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #00a0e9;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
